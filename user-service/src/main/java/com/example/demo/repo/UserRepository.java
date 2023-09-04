@@ -10,6 +10,8 @@ public interface UserRepository  {
 	
 	UserEntity createUser(UserEntity userEntity);
 	List<UserEntity> getAllUsers();
+	UserEntity findUserById(int id);
+	
 	
 
 }

@@ -7,6 +7,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,10 +45,17 @@ public class UserController {
 		return new ResponseEntity<UserEntity>(u, HttpStatus.CREATED);
 
 	}
+
 	@GetMapping
-	public ResponseEntity<List<UserEntity>> getAllUsers()
-	{
+	public ResponseEntity<List<UserEntity>> getAllUsers() {
 		return ResponseEntity.ok(userRepository.getAllUsers());
+	}
+
+	@GetMapping("/{id}")
+
+	public ResponseEntity<UserEntity> findUser(@PathVariable("id") int id) {
+		UserEntity userEntity = userRepository.findUserById(id);
+		return ResponseEntity.ok(userEntity);
 	}
 
 }
