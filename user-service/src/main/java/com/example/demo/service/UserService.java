@@ -11,4 +11,8 @@ public interface UserService {
 
 	List<UserResponseModel> getAllUsers();
 
+	UserResponseModel findUserById(int id);
+
+	UserResponseModel findUserByUserId(String userId);
+
 }
