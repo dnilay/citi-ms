@@ -1,0 +1,25 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: user-service-prod
+  datasource:
+    url: jdbc:mariadb://localhost:3306/hr1
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+logging:
+  file:
+    name: user-service.log
+    
+    

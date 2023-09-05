@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public UserResponseModel createUser(UserDto userDto) {
 		// TODO Auto-generated method stub
-		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+	//	modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 		UserEntity userEntity = modelMapper.map(userDto, UserEntity.class);
 		StringBuffer sb = new StringBuffer();
 		sb.append(userDto.getPassword());
@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<UserResponseModel> getAllUsers() {
-		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+	//	modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 		List<UserEntity> list = userRepository.findAll();
 		List<UserResponseModel> list1 = new ArrayList<>();
 		for (UserEntity u : list) {
