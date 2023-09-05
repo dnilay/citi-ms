@@ -3,7 +3,8 @@ package com.example.demo.controller;
 import java.util.List;
 import java.util.UUID;
 
-import org.springframework.core.env.Environment;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,49 +14,43 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.UserDto;
 import com.example.demo.model.UserEntity;
-import com.example.demo.repo.UserRepository;
+import com.example.demo.service.UserService;
+import com.example.demo.ui.UserRequestModel;
+import com.example.demo.ui.UserResponseModel;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/users")
 @AllArgsConstructor
-@Slf4j
+
 public class UserController {
 
-	private final Environment environment;
-
-	private final UserRepository userRepository;
-
-	@GetMapping("/status")
-	public ResponseEntity<String> getStatus() {
-		log.info("status endpoint called");
-		return ResponseEntity.status(HttpStatus.OK)
-				.body("user-service is up and runing on port: " + environment.getProperty("local.server.port"));
-	}
+	private ModelMapper modelMapper;
+	private final UserService userService;
 
 	@PostMapping
-	public ResponseEntity<UserEntity> createUser(@RequestBody UserEntity userEntity) {
-		log.info("within /users endpoint to create a new user");
-		userEntity.setUserId(UUID.randomUUID().toString());
+	public ResponseEntity<UserResponseModel> createUser(@RequestBody UserRequestModel userRequestModel) {
 
-		UserEntity u = userRepository.createUser(userEntity);
-		return new ResponseEntity<UserEntity>(u, HttpStatus.CREATED);
-
+		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+		UserDto userDto = modelMapper.map(userRequestModel, UserDto.class);
+		userDto.setUserId(UUID.randomUUID().toString());
+		UserResponseModel userResponseModel = userService.createUser(userDto);
+		return ResponseEntity.status(HttpStatus.CREATED).body(userResponseModel);
 	}
 
 	@GetMapping
-	public ResponseEntity<List<UserEntity>> getAllUsers() {
-		return ResponseEntity.ok(userRepository.getAllUsers());
+	public ResponseEntity<List<UserResponseModel>> getAllUsers() {
+		return ResponseEntity.ok(userService.getAllUsers());
 	}
 
 	@GetMapping("/{id}")
 
 	public ResponseEntity<UserEntity> findUser(@PathVariable("id") int id) {
-		UserEntity userEntity = userRepository.findUserById(id);
-		return ResponseEntity.ok(userEntity);
+		// UserEntity userEntity = userRepository.findUserById(id);
+		return null;
 	}
 
 }

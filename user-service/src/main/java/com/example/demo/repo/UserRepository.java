@@ -1,17 +1,11 @@
 package com.example.demo.repo;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.example.demo.model.UserEntity;
 
-
-
-public interface UserRepository  {
-	
-	UserEntity createUser(UserEntity userEntity);
-	List<UserEntity> getAllUsers();
-	UserEntity findUserById(int id);
-	
-	
+@Repository
+public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 
 }
