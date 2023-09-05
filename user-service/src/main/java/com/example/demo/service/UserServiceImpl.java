@@ -62,4 +62,41 @@ public class UserServiceImpl implements UserService {
 		return modelMapper.map(userEntity, UserResponseModel.class);
 	}
 
+	@Override
+	public UserResponseModel updateUserByUserId(String userId, UserDto userDto) {
+		UserEntity userEntity=userRepository.findByUserId(userId);
+		if(userEntity==null)
+		{
+			throw new UserNotFoundException("user with "+userId+" not found");
+		}
+		else
+		{
+			userEntity.setFirstName(userDto.getFirstName());
+			userEntity.setLastName(userDto.getLastName());
+			userEntity.setEmail(userDto.getEmail());
+			userEntity.setPassword(userDto.getPassword());
+			StringBuffer sb = new StringBuffer();
+			sb.append(userDto.getPassword());
+			userEntity.setEncryptedPassword(sb.reverse().toString());
+			return modelMapper.map(userRepository.save(userEntity),UserResponseModel.class);
+		}
+		
+	}
+
+	@Override
+	public void deleteUser(String userId) {
+		// TODO Auto-generated method stub
+		
+		UserEntity userEntity=userRepository.findByUserId(userId);
+		if(userEntity==null)
+		{
+			throw new UserNotFoundException("user with "+userId+" not found");
+		}
+		else
+		{
+			userRepository.delete(userEntity);
+		}
+		
+	}
+
 }

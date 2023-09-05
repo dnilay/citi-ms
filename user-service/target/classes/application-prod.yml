@@ -10,8 +10,8 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
-          
+      ddl-auto: update
+ 
 management:
   endpoints:
     web:
@@ -21,5 +21,13 @@ management:
 logging:
   file:
     name: user-service.log
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka  
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true  
+     
     

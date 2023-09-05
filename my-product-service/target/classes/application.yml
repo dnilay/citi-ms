@@ -1,0 +1,37 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: productr-service
+  datasource:
+    url: jdbc:mariadb://localhost:3306/hr1
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:8888
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+logging:
+  file:
+    name: user-service.log
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka  
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true  
+    

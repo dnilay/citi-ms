@@ -14,5 +14,8 @@ public interface UserService {
 	UserResponseModel findUserById(int id);
 
 	UserResponseModel findUserByUserId(String userId);
+	
+	UserResponseModel updateUserByUserId(String userId,UserDto userDto);
+	void deleteUser(String userId);
 
 }
