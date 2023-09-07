@@ -1,0 +1,812 @@
+2023-09-07 17:59:24.752  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 17:59:24.756  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 17:59:24.944  INFO [student-service,,] 20792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-07 17:59:24.945  INFO [student-service,,] 20792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-07 17:59:27.471  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 17:59:27.785  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 296 ms. Found 1 JPA repository interfaces.
+2023-09-07 17:59:28.464  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbf89fe6-62f3-3089-bcdd-447d08ab04a9
+2023-09-07 17:59:29.938  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 17:59:29.954  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 17:59:29.955  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 17:59:30.144  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 17:59:30.144  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5197 ms
+2023-09-07 17:59:32.882  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-07 17:59:33.038  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-07 17:59:33.119  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 17:59:33.223  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-09-07 17:59:33.531  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-07 17:59:33.794  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 17:59:34.738  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 17:59:34.762  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:59:35.471  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 17:59:35.628  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 17:59:35.702  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'school-service' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 17:59:37.641  INFO [student-service,,] 20792 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 17:59:38.520  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 17:59:38.689  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59961 (http) with context path ''
+2023-09-07 17:59:38.690  INFO [student-service,,] 20792 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59961
+2023-09-07 17:59:38.701  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 17:59:38.797  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 17:59:38.809  INFO [student-service,,] 20792 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 17:59:38.859  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 17:59:38.860  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 17:59:38.860  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 17:59:38.860  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 17:59:38.860  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 17:59:38.860  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 17:59:38.861  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 17:59:39.427  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 17:59:39.434  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 17:59:39.439  INFO [student-service,,] 20792 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 17:59:39.447  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694089779445 with initial instances count: 2
+2023-09-07 17:59:39.463  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 17:59:39.465  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694089779465, current=UP, previous=STARTING]
+2023-09-07 17:59:39.469  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:77f0532c7219968550d0021c96bbd46e: registering service...
+2023-09-07 17:59:39.555  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:77f0532c7219968550d0021c96bbd46e - registration status: 204
+2023-09-07 17:59:40.103  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 17.855 seconds (JVM running for 22.902)
+2023-09-07 17:59:41.082  INFO [student-service,,] 20792 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 17:59:41.082  INFO [student-service,,] 20792 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-07 17:59:41.087  INFO [student-service,,] 20792 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-09-07 18:01:52.319  WARN [student-service,d4477f4c695229e1,d4477f4c695229e1] 20792 --- [http-nio-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'student' for method parameter type Student is not present]
+2023-09-07 18:02:07.857  WARN [student-service,e144614c6f408d2d,e144614c6f408d2d] 20792 --- [http-nio-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'student' for method parameter type Student is not present]
+2023-09-07 18:03:01.803  INFO [student-service,,] 20792 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:03:01.807  INFO [student-service,,] 20792 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:03:01.808  INFO [student-service,,] 20792 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694089981808, current=DOWN, previous=UP]
+2023-09-07 18:03:01.808  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:77f0532c7219968550d0021c96bbd46e: registering service...
+2023-09-07 18:03:01.830  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:77f0532c7219968550d0021c96bbd46e - registration status: 204
+2023-09-07 18:03:02.215  INFO [student-service,,] 20792 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:03:02.220  INFO [student-service,,] 20792 --- [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-07 18:03:02.230  WARN [student-service,,] 20792 --- [Thread-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:03:02.250  INFO [student-service,,] 20792 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:03.036  INFO [student-service,,] 20792 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-07 18:03:03.047  INFO [student-service,,] 20792 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-07 18:03:03.049  INFO [student-service,,] 20792 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:03:06.060  INFO [student-service,,] 20792 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:03:06.076  INFO [student-service,,] 20792 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:77f0532c7219968550d0021c96bbd46e - deregister  status: 200
+2023-09-07 18:03:06.081  INFO [student-service,,] 20792 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:03:06.524  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:03:06.524  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:03:07.423  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:03:07.448  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:03:07.784  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbf89fe6-62f3-3089-bcdd-447d08ab04a9
+2023-09-07 18:03:08.196  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:03:08.197  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:03:08.197  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:03:08.270  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:03:08.270  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1742 ms
+2023-09-07 18:03:10.183  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-09-07 18:03:10.188  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-09-07 18:03:10.194  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:03:10.208  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:03:10.251  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:03:10.252  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:10.796  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:03:10.978  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:03:11.034  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'school-service' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:03:11.076  WARN [student-service,,] 20792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes\com\example\demo\controller\StudentController.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error, insert "}" to complete ClassBody
+
+2023-09-07 18:03:11.078  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:12.091  WARN [student-service,,] 20792 --- [restartedMain] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2023-09-07 18:03:12.093  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-09-07 18:03:12.103  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-09-07 18:03:12.104  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:03:12.134  INFO [student-service,,] 20792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-07 18:03:12.196 ERROR [student-service,,] 20792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes\com\example\demo\controller\StudentController.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at com.example.demo.StudentServiceApplication.main(StudentServiceApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+
+2023-09-07 18:03:14.024  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:03:14.025  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:03:14.534  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:03:14.548  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:03:14.741  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbf89fe6-62f3-3089-bcdd-447d08ab04a9
+2023-09-07 18:03:15.001  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:03:15.002  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:03:15.003  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:03:15.045  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:03:15.045  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+2023-09-07 18:03:16.829  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-09-07 18:03:16.833  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-09-07 18:03:16.838  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:03:16.850  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:03:16.886  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:03:16.887  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:17.203  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:03:17.321  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:03:17.358  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'school-service' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:03:18.702  INFO [student-service,,] 20792 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:03:19.379  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:03:19.451  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60159 (http) with context path ''
+2023-09-07 18:03:19.452  INFO [student-service,,] 20792 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60159
+2023-09-07 18:03:19.454  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:03:19.465  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:03:19.466  INFO [student-service,,] 20792 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:03:19.482  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:03:19.482  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:03:19.482  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:03:19.482  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:03:19.482  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:03:19.483  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:03:19.483  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:03:19.512  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:03:19.513  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:03:19.514  INFO [student-service,,] 20792 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:03:19.515  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694089999515 with initial instances count: 3
+2023-09-07 18:03:19.528  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:03:19.528  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694089999528, current=UP, previous=STARTING]
+2023-09-07 18:03:19.529  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcb915481f8647829763116e3a18f80a: registering service...
+2023-09-07 18:03:19.551  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcb915481f8647829763116e3a18f80a - registration status: 204
+2023-09-07 18:03:20.035  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 6.393 seconds (JVM running for 242.834)
+2023-09-07 18:03:20.040  INFO [student-service,,] 20792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:03:50.362  INFO [student-service,,] 20792 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:03:50.363  INFO [student-service,,] 20792 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:03:50.363  INFO [student-service,,] 20792 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090030363, current=DOWN, previous=UP]
+2023-09-07 18:03:50.364  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcb915481f8647829763116e3a18f80a: registering service...
+2023-09-07 18:03:50.368  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcb915481f8647829763116e3a18f80a - registration status: 204
+2023-09-07 18:03:50.566  INFO [student-service,,] 20792 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:03:50.572  WARN [student-service,,] 20792 --- [Thread-8] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:03:50.579  INFO [student-service,,] 20792 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:51.585  INFO [student-service,,] 20792 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-09-07 18:03:51.594  INFO [student-service,,] 20792 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-09-07 18:03:51.595  INFO [student-service,,] 20792 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:03:54.614  INFO [student-service,,] 20792 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:03:54.629  INFO [student-service,,] 20792 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcb915481f8647829763116e3a18f80a - deregister  status: 200
+2023-09-07 18:03:54.633  INFO [student-service,,] 20792 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:03:55.067  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:03:55.068  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:03:55.677  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:03:55.690  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:03:55.910  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbf89fe6-62f3-3089-bcdd-447d08ab04a9
+2023-09-07 18:03:56.255  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:03:56.256  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:03:56.257  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:03:56.309  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:03:56.310  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1239 ms
+2023-09-07 18:03:58.062  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:03:58.081  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-09-07 18:03:58.086  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-09-07 18:03:58.086  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:03:58.249  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:03:58.250  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:03:58.650  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:03:58.811  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:03:58.868  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'school-service' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:04:00.631  INFO [student-service,,] 20792 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:04:01.679  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:04:01.782  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60219 (http) with context path ''
+2023-09-07 18:04:01.784  INFO [student-service,,] 20792 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60219
+2023-09-07 18:04:01.787  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:04:01.799  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:04:01.799  INFO [student-service,,] 20792 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:04:01.802  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:04:01.802  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:04:01.803  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:04:01.803  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:04:01.803  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:04:01.803  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:04:01.803  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:04:01.843  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:04:01.845  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:04:01.847  INFO [student-service,,] 20792 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:04:01.848  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090041848 with initial instances count: 2
+2023-09-07 18:04:01.876  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:04:01.877  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090041877, current=UP, previous=STARTING]
+2023-09-07 18:04:01.878  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:91f5c7d91101d774bf6a7a8227bf2c10: registering service...
+2023-09-07 18:04:01.908  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:91f5c7d91101d774bf6a7a8227bf2c10 - registration status: 204
+2023-09-07 18:04:02.659  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 7.958 seconds (JVM running for 285.458)
+2023-09-07 18:04:02.666  INFO [student-service,,] 20792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:04:41.245  INFO [student-service,,] 20792 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:04:41.246  INFO [student-service,,] 20792 --- [Thread-21] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:04:41.247  INFO [student-service,,] 20792 --- [Thread-21] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090081247, current=DOWN, previous=UP]
+2023-09-07 18:04:41.247  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:91f5c7d91101d774bf6a7a8227bf2c10: registering service...
+2023-09-07 18:04:41.259  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:91f5c7d91101d774bf6a7a8227bf2c10 - registration status: 204
+2023-09-07 18:04:41.526  INFO [student-service,,] 20792 --- [Thread-21] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:04:41.531  WARN [student-service,,] 20792 --- [Thread-21] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:04:41.541  INFO [student-service,,] 20792 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:04:42.555  INFO [student-service,,] 20792 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-09-07 18:04:42.565  INFO [student-service,,] 20792 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-09-07 18:04:42.565  INFO [student-service,,] 20792 --- [Thread-21] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:04:45.572  INFO [student-service,,] 20792 --- [Thread-21] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:04:45.587  INFO [student-service,,] 20792 --- [Thread-21] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:91f5c7d91101d774bf6a7a8227bf2c10 - deregister  status: 200
+2023-09-07 18:04:45.590  INFO [student-service,,] 20792 --- [Thread-21] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:04:45.974  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:04:45.975  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:04:46.423 ERROR [student-service,,] 20792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Either 'name' or 'value' must be provided in @FeignClient
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.getClientName(FeignClientsRegistrar.java:406) ~[spring-cloud-openfeign-core-3.1.8.jar:3.1.8]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.registerFeignClients(FeignClientsRegistrar.java:199) ~[spring-cloud-openfeign-core-3.1.8.jar:3.1.8]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.registerBeanDefinitions(FeignClientsRegistrar.java:151) ~[spring-cloud-openfeign-core-3.1.8.jar:3.1.8]
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:396) ~[spring-context-5.3.29.jar:5.3.29]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:395) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:157) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at com.example.demo.StudentServiceApplication.main(StudentServiceApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-09-07 18:04:57.429  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:04:57.429  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:04:58.054  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:04:58.068  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:04:58.339  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbf89fe6-62f3-3089-bcdd-447d08ab04a9
+2023-09-07 18:04:58.690  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:04:58.691  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:04:58.691  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:04:58.751  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:04:58.751  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1319 ms
+2023-09-07 18:05:00.341  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:05:00.357  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-09-07 18:05:00.361  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-09-07 18:05:00.362  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:05:00.434  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:05:00.434  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:05:00.757  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:05:00.896  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:05:00.930  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'school-service' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:05:02.296  INFO [student-service,,] 20792 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:05:03.036  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:05:03.106  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60288 (http) with context path ''
+2023-09-07 18:05:03.107  INFO [student-service,,] 20792 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60288
+2023-09-07 18:05:03.109  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:05:03.117  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:05:03.117  INFO [student-service,,] 20792 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:05:03.119  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:05:03.119  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:05:03.119  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:05:03.119  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:05:03.119  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:05:03.120  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:05:03.120  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:05:03.146  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:05:03.148  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:05:03.149  INFO [student-service,,] 20792 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:05:03.150  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090103150 with initial instances count: 2
+2023-09-07 18:05:03.164  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:05:03.165  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090103165, current=UP, previous=STARTING]
+2023-09-07 18:05:03.165  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:29c370b6ded9899407e39426e6ee064c: registering service...
+2023-09-07 18:05:03.197  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:29c370b6ded9899407e39426e6ee064c - registration status: 204
+2023-09-07 18:05:03.758  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 6.749 seconds (JVM running for 346.557)
+2023-09-07 18:05:03.762  INFO [student-service,,] 20792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:05:21.602  INFO [student-service,,] 20792 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:05:21.603  INFO [student-service,,] 20792 --- [Thread-28] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:05:21.604  INFO [student-service,,] 20792 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090121604, current=DOWN, previous=UP]
+2023-09-07 18:05:21.604  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:29c370b6ded9899407e39426e6ee064c: registering service...
+2023-09-07 18:05:21.618  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:29c370b6ded9899407e39426e6ee064c - registration status: 204
+2023-09-07 18:05:21.828  INFO [student-service,,] 20792 --- [Thread-28] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:05:21.833  WARN [student-service,,] 20792 --- [Thread-28] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:05:21.841  INFO [student-service,,] 20792 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:05:22.848  INFO [student-service,,] 20792 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-09-07 18:05:22.854  INFO [student-service,,] 20792 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-09-07 18:05:22.855  INFO [student-service,,] 20792 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:05:25.865  INFO [student-service,,] 20792 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:05:25.880  INFO [student-service,,] 20792 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:29c370b6ded9899407e39426e6ee064c - deregister  status: 200
+2023-09-07 18:05:25.884  INFO [student-service,,] 20792 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:05:26.280  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 20792 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:05:26.281  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:05:26.908  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:05:26.920  INFO [student-service,,] 20792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:05:27.149  INFO [student-service,,] 20792 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef025dc7-75ee-3fa2-8b0c-e9558e73c4b7
+2023-09-07 18:05:27.531  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:05:27.532  INFO [student-service,,] 20792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:05:27.532  INFO [student-service,,] 20792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:05:27.589  INFO [student-service,,] 20792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:05:27.589  INFO [student-service,,] 20792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2023-09-07 18:05:29.242  INFO [student-service,,] 20792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:05:29.253  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-09-07 18:05:29.257  INFO [student-service,,] 20792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-09-07 18:05:29.257  INFO [student-service,,] 20792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:05:29.315  INFO [student-service,,] 20792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:05:29.315  INFO [student-service,,] 20792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:05:29.642  WARN [student-service,,] 20792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:05:29.788  WARN [student-service,,] 20792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:05:29.830  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SCHOOL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:05:31.271  INFO [student-service,,] 20792 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:05:32.047  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:05:32.120  INFO [student-service,,] 20792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60323 (http) with context path ''
+2023-09-07 18:05:32.121  INFO [student-service,,] 20792 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60323
+2023-09-07 18:05:32.122  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:05:32.130  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:05:32.131  INFO [student-service,,] 20792 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:05:32.132  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:05:32.133  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:05:32.159  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:05:32.160  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:05:32.161  INFO [student-service,,] 20792 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:05:32.162  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090132162 with initial instances count: 2
+2023-09-07 18:05:32.176  INFO [student-service,,] 20792 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:05:32.176  INFO [student-service,,] 20792 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090132176, current=UP, previous=STARTING]
+2023-09-07 18:05:32.177  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:24aebbc51d20c75a10da5e40cd1134ef: registering service...
+2023-09-07 18:05:32.196  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:24aebbc51d20c75a10da5e40cd1134ef - registration status: 204
+2023-09-07 18:05:32.714  INFO [student-service,,] 20792 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 6.752 seconds (JVM running for 375.513)
+2023-09-07 18:05:32.720  INFO [student-service,,] 20792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:07:18.833  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-07 18:07:18.833  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:07:18.834  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090238834, current=DOWN, previous=UP]
+2023-09-07 18:07:18.834  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:24aebbc51d20c75a10da5e40cd1134ef: registering service...
+2023-09-07 18:07:18.852  INFO [student-service,,] 20792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:24aebbc51d20c75a10da5e40cd1134ef - registration status: 204
+2023-09-07 18:07:19.008  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:07:19.013  WARN [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:07:19.016  INFO [student-service,,] 20792 --- [Thread-43] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.016  INFO [student-service,,] 20792 --- [Thread-36] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.016  INFO [student-service,,] 20792 --- [Thread-12] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.016  INFO [student-service,,] 20792 --- [Thread-5] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.017  INFO [student-service,,] 20792 --- [Thread-25] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.017  INFO [student-service,,] 20792 --- [Thread-18] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:07:19.026  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:07:20.033  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-09-07 18:07:20.038  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-09-07 18:07:20.038  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:07:23.045  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:07:23.060  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:24aebbc51d20c75a10da5e40cd1134ef - deregister  status: 200
+2023-09-07 18:07:23.068  INFO [student-service,,] 20792 --- [RMI TCP Connection(28)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:07:54.509  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 8436 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:07:54.512  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:07:54.613  INFO [student-service,,] 8436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-07 18:07:54.614  INFO [student-service,,] 8436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-07 18:07:57.387  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:07:57.828  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 422 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:07:58.762  INFO [student-service,,] 8436 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef025dc7-75ee-3fa2-8b0c-e9558e73c4b7
+2023-09-07 18:08:01.268  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:08:01.293  INFO [student-service,,] 8436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:08:01.295  INFO [student-service,,] 8436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:08:01.613  INFO [student-service,,] 8436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:08:01.614  INFO [student-service,,] 8436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6999 ms
+2023-09-07 18:08:05.460  INFO [student-service,,] 8436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:08:05.596  INFO [student-service,,] 8436 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-09-07 18:08:05.968  INFO [student-service,,] 8436 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-07 18:08:06.258  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-07 18:08:06.531  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-07 18:08:06.626  INFO [student-service,,] 8436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:08:08.235  INFO [student-service,,] 8436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:08:08.264  INFO [student-service,,] 8436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:08:09.207  WARN [student-service,,] 8436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:08:09.392  WARN [student-service,,] 8436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:08:09.472  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SCHOOL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:08:11.700  INFO [student-service,,] 8436 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:08:12.835  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:08:13.146  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60479 (http) with context path ''
+2023-09-07 18:08:13.147  INFO [student-service,,] 8436 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60479
+2023-09-07 18:08:13.161  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:08:13.279  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:08:13.291  INFO [student-service,,] 8436 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:08:13.356  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:08:13.356  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:08:13.357  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:08:13.357  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:08:13.357  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:08:13.357  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:08:13.357  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:08:14.013  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:08:14.018  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:08:14.023  INFO [student-service,,] 8436 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:08:14.030  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090294029 with initial instances count: 2
+2023-09-07 18:08:14.044  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:08:14.045  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090294045, current=UP, previous=STARTING]
+2023-09-07 18:08:14.050  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcbb86f8d062337cae5d5d893bb938f1: registering service...
+2023-09-07 18:08:14.118  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcbb86f8d062337cae5d5d893bb938f1 - registration status: 204
+2023-09-07 18:08:14.812  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 22.105 seconds (JVM running for 24.058)
+2023-09-07 18:08:15.888  INFO [student-service,,] 8436 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 18:08:15.889  INFO [student-service,,] 8436 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-07 18:08:15.893  INFO [student-service,,] 8436 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-09-07 18:11:03.878  INFO [student-service,,] 8436 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:11:03.882  INFO [student-service,,] 8436 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:11:03.882  INFO [student-service,,] 8436 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090463882, current=DOWN, previous=UP]
+2023-09-07 18:11:03.883  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcbb86f8d062337cae5d5d893bb938f1: registering service...
+2023-09-07 18:11:03.904  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcbb86f8d062337cae5d5d893bb938f1 - registration status: 204
+2023-09-07 18:11:04.408  INFO [student-service,,] 8436 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:11:04.412  INFO [student-service,,] 8436 --- [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-07 18:11:04.425  WARN [student-service,,] 8436 --- [Thread-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:11:04.427  WARN [student-service,,] 8436 --- [Thread-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [boundedElastic-evictor-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:11:04.428  WARN [student-service,,] 8436 --- [Thread-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:11:04.453  INFO [student-service,,] 8436 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:11:04.840  INFO [student-service,,] 8436 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-07 18:11:04.853  INFO [student-service,,] 8436 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-07 18:11:04.856  INFO [student-service,,] 8436 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:11:07.860  INFO [student-service,,] 8436 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:11:07.875  INFO [student-service,,] 8436 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:dcbb86f8d062337cae5d5d893bb938f1 - deregister  status: 200
+2023-09-07 18:11:07.878  INFO [student-service,,] 8436 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:11:08.299  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 8436 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:11:08.299  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:11:08.958  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:11:08.971  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:11:09.192  INFO [student-service,,] 8436 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef025dc7-75ee-3fa2-8b0c-e9558e73c4b7
+2023-09-07 18:11:09.503  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:11:09.504  INFO [student-service,,] 8436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:11:09.505  INFO [student-service,,] 8436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:11:09.556  INFO [student-service,,] 8436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:11:09.556  INFO [student-service,,] 8436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms
+2023-09-07 18:11:11.058  INFO [student-service,,] 8436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:11:11.070  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-09-07 18:11:11.075  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-09-07 18:11:11.075  INFO [student-service,,] 8436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:11:11.141  INFO [student-service,,] 8436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:11:11.141  INFO [student-service,,] 8436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:11:11.447  WARN [student-service,,] 8436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:11:11.577  WARN [student-service,,] 8436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:11:11.610  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SCHOOL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:11:12.935  INFO [student-service,,] 8436 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:11:13.625  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:11:13.712  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60656 (http) with context path ''
+2023-09-07 18:11:13.713  INFO [student-service,,] 8436 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60656
+2023-09-07 18:11:13.715  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:11:13.726  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:11:13.726  INFO [student-service,,] 8436 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:11:13.740  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:11:13.740  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:11:13.741  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:11:13.741  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:11:13.741  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:11:13.741  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:11:13.741  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:11:13.768  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:11:13.769  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:11:13.771  INFO [student-service,,] 8436 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:11:13.772  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090473772 with initial instances count: 3
+2023-09-07 18:11:13.785  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:11:13.786  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090473786, current=UP, previous=STARTING]
+2023-09-07 18:11:13.787  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:cf3d0e72e400db64c16fda3fb80b8155: registering service...
+2023-09-07 18:11:13.804  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:cf3d0e72e400db64c16fda3fb80b8155 - registration status: 204
+2023-09-07 18:11:14.282  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 6.325 seconds (JVM running for 203.528)
+2023-09-07 18:11:14.289  INFO [student-service,,] 8436 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:11:42.621  INFO [student-service,8045d0c94d791ff0,8045d0c94d791ff0] 8436 --- [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 18:11:42.621  INFO [student-service,8045d0c94d791ff0,8045d0c94d791ff0] 8436 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-07 18:11:42.625  INFO [student-service,8045d0c94d791ff0,8045d0c94d791ff0] 8436 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-07 18:13:58.528  INFO [student-service,,] 8436 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-07 18:13:58.532  INFO [student-service,,] 8436 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:13:58.533  INFO [student-service,,] 8436 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090638533, current=DOWN, previous=UP]
+2023-09-07 18:13:58.534  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:cf3d0e72e400db64c16fda3fb80b8155: registering service...
+2023-09-07 18:13:58.553  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:cf3d0e72e400db64c16fda3fb80b8155 - registration status: 204
+2023-09-07 18:13:58.873  INFO [student-service,,] 8436 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:13:58.876  INFO [student-service,,] 8436 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-07 18:13:58.881  WARN [student-service,,] 8436 --- [Thread-8] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:13:58.891  INFO [student-service,,] 8436 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:13:59.042  INFO [student-service,,] 8436 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-09-07 18:13:59.051  INFO [student-service,,] 8436 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-09-07 18:13:59.052  INFO [student-service,,] 8436 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:14:02.060  INFO [student-service,,] 8436 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:14:02.077  INFO [student-service,,] 8436 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:cf3d0e72e400db64c16fda3fb80b8155 - deregister  status: 200
+2023-09-07 18:14:02.082  INFO [student-service,,] 8436 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:14:02.717  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 8436 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:14:02.718  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:14:03.520  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:14:03.531  INFO [student-service,,] 8436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:14:03.738  INFO [student-service,,] 8436 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef025dc7-75ee-3fa2-8b0c-e9558e73c4b7
+2023-09-07 18:14:04.039  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:14:04.040  INFO [student-service,,] 8436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:14:04.040  INFO [student-service,,] 8436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:14:04.096  INFO [student-service,,] 8436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:14:04.096  INFO [student-service,,] 8436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
+2023-09-07 18:14:06.140  INFO [student-service,,] 8436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:14:06.156  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-09-07 18:14:06.162  INFO [student-service,,] 8436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-09-07 18:14:06.162  INFO [student-service,,] 8436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:14:06.241  INFO [student-service,,] 8436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:14:06.242  INFO [student-service,,] 8436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:14:06.658  WARN [student-service,,] 8436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:14:06.817  WARN [student-service,,] 8436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:14:06.885  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SCHOOL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:14:09.112  INFO [student-service,,] 8436 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:14:10.062  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:14:10.160  INFO [student-service,,] 8436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60823 (http) with context path ''
+2023-09-07 18:14:10.162  INFO [student-service,,] 8436 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60823
+2023-09-07 18:14:10.164  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:14:10.187  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:14:10.188  INFO [student-service,,] 8436 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:14:10.190  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:14:10.191  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:14:10.218  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:14:10.220  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:14:10.221  INFO [student-service,,] 8436 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:14:10.223  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694090650223 with initial instances count: 3
+2023-09-07 18:14:10.246  INFO [student-service,,] 8436 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:14:10.247  INFO [student-service,,] 8436 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090650247, current=UP, previous=STARTING]
+2023-09-07 18:14:10.247  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:0bcef6cdc1a6251beadb8cbb6ca85b9e: registering service...
+2023-09-07 18:14:10.268  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:0bcef6cdc1a6251beadb8cbb6ca85b9e - registration status: 204
+2023-09-07 18:14:10.910  INFO [student-service,,] 8436 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 8.732 seconds (JVM running for 380.156)
+2023-09-07 18:14:10.918  INFO [student-service,,] 8436 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-07 18:14:47.734  INFO [student-service,83c91277afe75be9,83c91277afe75be9] 8436 --- [http-nio-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 18:14:47.734  INFO [student-service,83c91277afe75be9,83c91277afe75be9] 8436 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-07 18:14:47.738  INFO [student-service,83c91277afe75be9,83c91277afe75be9] 8436 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-09-07 18:14:47.743  WARN [student-service,83c91277afe75be9,83c91277afe75be9] 8436 --- [http-nio-auto-3-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-07 18:14:49.188  WARN [student-service,8b71684ef5ff2c40,8b71684ef5ff2c40] 8436 --- [http-nio-auto-3-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-07 18:14:50.483  WARN [student-service,735bb8d4df78993b,735bb8d4df78993b] 8436 --- [http-nio-auto-3-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-07 18:14:52.932  WARN [student-service,1a175e004786e1f2,1a175e004786e1f2] 8436 --- [http-nio-auto-3-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-07 18:15:50.592  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-07 18:15:50.593  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STUDENT-SERVICE with eureka with status DOWN
+2023-09-07 18:15:50.593  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694090750593, current=DOWN, previous=UP]
+2023-09-07 18:15:50.593  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:0bcef6cdc1a6251beadb8cbb6ca85b9e: registering service...
+2023-09-07 18:15:50.606  INFO [student-service,,] 8436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:0bcef6cdc1a6251beadb8cbb6ca85b9e - registration status: 204
+2023-09-07 18:15:50.801  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-07 18:15:50.803  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-07 18:15:50.806  WARN [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.18/java.lang.Thread.run(Thread.java:834)
+2023-09-07 18:15:50.809  INFO [student-service,,] 8436 --- [Thread-12] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:15:50.810  INFO [student-service,,] 8436 --- [Thread-5] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:15:50.809  INFO [student-service,,] 8436 --- [Thread-19] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2023-09-07 18:15:50.814  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:15:51.438  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-09-07 18:15:51.446  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-09-07 18:15:51.447  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-09-07 18:15:54.461  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-09-07 18:15:54.476  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:0bcef6cdc1a6251beadb8cbb6ca85b9e - deregister  status: 200
+2023-09-07 18:15:54.480  INFO [student-service,,] 8436 --- [RMI TCP Connection(26)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-07 18:22:08.774  INFO [student-service,,] 1572 --- [restartedMain] c.e.demo.StudentServiceApplication       : Starting StudentServiceApplication using Java 11.0.18 on DESKTOP-D321L3L with PID 1572 (C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service\target\classes started by Nilay in C:\Users\Nilay\Documents\workspace-spring-tool-suite-4-4.18.1.RELEASE1\student-service)
+2023-09-07 18:22:08.776  INFO [student-service,,] 1572 --- [restartedMain] c.e.demo.StudentServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:22:08.876  INFO [student-service,,] 1572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-07 18:22:08.877  INFO [student-service,,] 1572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-07 18:22:10.995  INFO [student-service,,] 1572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:22:11.336  INFO [student-service,,] 1572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 324 ms. Found 1 JPA repository interfaces.
+2023-09-07 18:22:12.142  INFO [student-service,,] 1572 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef025dc7-75ee-3fa2-8b0c-e9558e73c4b7
+2023-09-07 18:22:13.852  INFO [student-service,,] 1572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-07 18:22:13.869  INFO [student-service,,] 1572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-07 18:22:13.870  INFO [student-service,,] 1572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-07 18:22:14.091  INFO [student-service,,] 1572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:22:14.091  INFO [student-service,,] 1572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5213 ms
+2023-09-07 18:22:17.017  INFO [student-service,,] 1572 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:22:17.117  INFO [student-service,,] 1572 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-09-07 18:22:17.435  INFO [student-service,,] 1572 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-07 18:22:17.641  INFO [student-service,,] 1572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-07 18:22:17.813  INFO [student-service,,] 1572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-07 18:22:17.906  INFO [student-service,,] 1572 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-09-07 18:22:19.038  INFO [student-service,,] 1572 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:22:19.060  INFO [student-service,,] 1572 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:22:19.818  WARN [student-service,,] 1572 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:22:19.983  WARN [student-service,,] 1572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-07 18:22:20.055  INFO [student-service,,] 1572 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SCHOOL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-09-07 18:22:21.995  INFO [student-service,,] 1572 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-07 18:22:22.932  INFO [student-service,,] 1572 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-09-07 18:22:23.111  INFO [student-service,,] 1572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61444 (http) with context path ''
+2023-09-07 18:22:23.112  INFO [student-service,,] 1572 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 61444
+2023-09-07 18:22:23.124  INFO [student-service,,] 1572 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-07 18:22:23.206  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-07 18:22:23.216  INFO [student-service,,] 1572 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-07 18:22:23.266  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-07 18:22:23.266  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-07 18:22:23.267  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-07 18:22:23.267  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-07 18:22:23.267  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-07 18:22:23.267  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-07 18:22:23.267  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-07 18:22:23.855  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-07 18:22:23.860  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-07 18:22:23.865  INFO [student-service,,] 1572 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-07 18:22:23.875  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694091143873 with initial instances count: 2
+2023-09-07 18:22:23.895  INFO [student-service,,] 1572 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STUDENT-SERVICE with eureka with status UP
+2023-09-07 18:22:23.897  INFO [student-service,,] 1572 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694091143897, current=UP, previous=STARTING]
+2023-09-07 18:22:23.901  INFO [student-service,,] 1572 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:3805ae046be1f2145a8889d3bd931963: registering service...
+2023-09-07 18:22:23.985  INFO [student-service,,] 1572 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STUDENT-SERVICE/student-service:3805ae046be1f2145a8889d3bd931963 - registration status: 204
+2023-09-07 18:22:24.517  INFO [student-service,,] 1572 --- [restartedMain] c.e.demo.StudentServiceApplication       : Started StudentServiceApplication in 17.242 seconds (JVM running for 18.95)
+2023-09-07 18:22:25.445  INFO [student-service,,] 1572 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 18:22:25.446  INFO [student-service,,] 1572 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-07 18:22:25.449  INFO [student-service,,] 1572 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-07 18:23:39.943  WARN [student-service,bd5dd3e415012f2a,bd5dd3e415012f2a] 1572 --- [http-nio-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-07 18:24:19.504 ERROR [student-service,7ef275c1d31cb026,7ef275c1d31cb026] 1572 --- [http-nio-auto-1-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.example.demo.controller.StudentController.createStudent(StudentController.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.79.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.79.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68) ~[spring-cloud-sleuth-instrumentation-3.1.9.jar:3.1.9]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131) ~[spring-cloud-sleuth-autoconfigure-3.1.9.jar:3.1.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.15.jar:2.7.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103) ~[spring-cloud-sleuth-instrumentation-3.1.9.jar:3.1.9]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
