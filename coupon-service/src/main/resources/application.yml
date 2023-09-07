@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 0
 spring:
   application:
     name: coupon-service
@@ -34,3 +34,4 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true  
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
