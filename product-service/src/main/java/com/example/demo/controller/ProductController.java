@@ -20,20 +20,17 @@ public class ProductController {
 
 		this.productRepository = productRepository;
 	}
-	
+
 	@PostMapping("/products")
-	public Product createProduct(@RequestBody Product product)
-	{
+	public Product createProduct(@RequestBody Product product) {
 		product.setProductId(UUID.randomUUID().toString());
 		return productRepository.createProduct(product);
-		
+
 	}
-	
+
 	@GetMapping("/products")
-	public Collection<Product> fetchAllProducts()
-	{
+	public Collection<Product> fetchAllProducts() {
 		return productRepository.getAllProducts();
 	}
-	
 
 }
