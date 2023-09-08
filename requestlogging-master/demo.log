@@ -1,0 +1,80 @@
+2023-09-08 17:29:04.302  INFO 19068 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-D321L3L with PID 19068 (C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master\target\classes started by Nilay in C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master)
+2023-09-08 17:29:04.305  INFO 19068 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2023-09-08 17:29:05.018  INFO 19068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2023-09-08 17:29:05.028  INFO 19068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-08 17:29:05.029  INFO 19068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2023-09-08 17:29:05.092  INFO 19068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-08 17:29:05.093  INFO 19068 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 746 ms
+2023-09-08 17:29:05.216  INFO 19068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 17:29:05.271  INFO 19068 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-09-08 17:29:05.359  INFO 19068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2023-09-08 17:29:05.369  INFO 19068 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.4 seconds (JVM running for 2.064)
+2023-09-08 17:30:00.108  INFO 19068 --- [http-nio-8989-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 17:30:00.110  INFO 19068 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-08 17:30:00.118  INFO 19068 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-09-08 17:30:00.169  INFO 19068 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 17:30:00.170  INFO 19068 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 17:32:05.051  INFO 19068 --- [http-nio-8989-exec-5] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 17:32:05.052  INFO 19068 --- [http-nio-8989-exec-5] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 17:32:23.493  INFO 19068 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-08 17:32:23.673  INFO 19068 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 17:32:52.336  INFO 23812 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-D321L3L with PID 23812 (C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master\target\classes started by Nilay in C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master)
+2023-09-08 17:32:52.339  INFO 23812 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2023-09-08 17:32:53.054  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2023-09-08 17:32:53.063  INFO 23812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-08 17:32:53.064  INFO 23812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2023-09-08 17:32:53.127  INFO 23812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-08 17:32:53.127  INFO 23812 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 746 ms
+2023-09-08 17:32:53.247  INFO 23812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 17:32:53.302  INFO 23812 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-09-08 17:32:53.392  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2023-09-08 17:32:53.401  INFO 23812 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.427 seconds (JVM running for 2.09)
+2023-09-08 17:33:15.616  INFO 23812 --- [http-nio-8989-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 17:33:15.617  INFO 23812 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-08 17:33:15.622  INFO 23812 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-09-08 17:33:15.663  INFO 23812 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 17:33:15.663  INFO 23812 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 17:33:15.664  INFO 23812 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : HTTP/1.1
+2023-09-08 17:37:11.508  INFO 23812 --- [http-nio-8989-exec-5] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 17:37:11.509  INFO 23812 --- [http-nio-8989-exec-5] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 17:37:11.509  INFO 23812 --- [http-nio-8989-exec-5] com.example.demo.LogInterceptor          : HTTP/1.1
+2023-09-08 17:37:39.128  INFO 23812 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-08 17:37:39.301  INFO 23812 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 18:13:13.080  INFO 14736 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-D321L3L with PID 14736 (C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master\target\classes started by Nilay in C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master)
+2023-09-08 18:13:13.084  INFO 14736 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2023-09-08 18:13:14.604  INFO 14736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2023-09-08 18:13:14.623  INFO 14736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-08 18:13:14.624  INFO 14736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2023-09-08 18:13:14.764  INFO 14736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-08 18:13:14.764  INFO 14736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1617 ms
+2023-09-08 18:13:15.017  INFO 14736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 18:13:15.137  INFO 14736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-09-08 18:13:15.319  INFO 14736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2023-09-08 18:13:15.336  INFO 14736 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.973 seconds (JVM running for 4.387)
+2023-09-08 18:13:36.043  INFO 14736 --- [http-nio-8989-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 18:13:36.045  INFO 14736 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-08 18:13:36.054  INFO 14736 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-09-08 18:13:36.120  INFO 14736 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 18:13:36.120  INFO 14736 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 18:13:36.121  INFO 14736 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : HTTP/1.1
+2023-09-08 18:14:34.560  INFO 14736 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-08 18:14:34.878  INFO 14736 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 18:14:52.267  INFO 13500 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-D321L3L with PID 13500 (C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master\target\classes started by Nilay in C:\Users\Nilay\Downloads\requestlogging-master\requestlogging-master)
+2023-09-08 18:14:52.274  INFO 13500 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2023-09-08 18:14:53.966  INFO 13500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2023-09-08 18:14:53.991  INFO 13500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-08 18:14:53.992  INFO 13500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2023-09-08 18:14:54.183  INFO 13500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-08 18:14:54.183  INFO 13500 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1824 ms
+2023-09-08 18:14:54.455  INFO 13500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 18:14:54.584  INFO 13500 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-09-08 18:14:54.773  INFO 13500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2023-09-08 18:14:54.794  INFO 13500 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.471 seconds (JVM running for 5.272)
+2023-09-08 18:15:10.309  INFO 13500 --- [http-nio-8989-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 18:15:10.310  INFO 13500 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-08 18:15:10.319  INFO 13500 --- [http-nio-8989-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-09-08 18:15:10.384  INFO 13500 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming request is {name=John, age=23, address={street=street-1, city=kolkata}}
+2023-09-08 18:15:10.385  INFO 13500 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : Incoming url is: http://localhost:8989/numberOneAPI
+2023-09-08 18:15:10.386  INFO 13500 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : HTTP/1.1
+2023-09-08 18:15:10.386  INFO 13500 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : application/json
+2023-09-08 18:15:10.386  INFO 13500 --- [http-nio-8989-exec-2] com.example.demo.LogInterceptor          : 
