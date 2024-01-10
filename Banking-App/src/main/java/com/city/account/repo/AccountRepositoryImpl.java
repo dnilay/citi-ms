@@ -48,5 +48,27 @@ public class AccountRepositoryImpl implements AccountRepository {
 		int result= preparedStatement.executeUpdate();
 		System.out.println(result+" row(s) updated.");
 	}
+	@Override
+	public Account findByAccountNumber(int accountNumber) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		preparedStatement=connection.prepareStatement("select * from accounts where acoount_no=?");
+		preparedStatement.setInt(1, accountNumber);
+		resultSet=preparedStatement.executeQuery();
+		List<Account> list=new ArrayList<Account>();
+		while(resultSet.next())
+		{
+			list.add(new Account(resultSet.getInt(1), resultSet.getString(2), resultSet.getInt(3)));
+		}
+		if(list.isEmpty())
+		{
+			return null;
+		}
+		else
+		{
+			return list.get(0);
+		}
+		
+	}
 
 }

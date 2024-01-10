@@ -10,5 +10,7 @@ public interface AccountRepository {
 	List<Account> getAccounts() throws SQLException;
 	
 	void createAccount(Account account)throws SQLException;
+	
+	Account findByAccountNumber(int accountNumber) throws SQLException;
 
 }

@@ -32,6 +32,7 @@ public class App
     	  System.out.println("1. Display All Customers: ");
           System.out.println("2. Display All Accounts: ");
           System.out.println("3. Create An Account: ");
+          System.out.println("4. find by account number: ");
           System.out.println("0. Exit.");
           System.out.print("enter your choice: ");
           choice=scanner.nextInt();
@@ -57,6 +58,20 @@ public class App
 			System.out.println("Enter Amount: ");
 			int amount=scanner.nextInt();
 			accountRepository.createAccount(new Account(new Random().nextInt(10000), name, amount));
+			break;
+		case 4:
+			System.out.println("Enter Account Number: ");
+			int n=scanner.nextInt();
+			Account account=accountRepository.findByAccountNumber(n);
+			if(account==null)
+			{
+				System.out.println("no such account...");
+			}
+			else
+			{
+				System.out.println(account);
+			}
+			
 			break;
 		case 0:
 			System.exit(0);
