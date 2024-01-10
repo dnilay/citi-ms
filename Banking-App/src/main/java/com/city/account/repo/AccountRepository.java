@@ -8,5 +8,7 @@ import com.city.account.Account;
 public interface AccountRepository {
 	
 	List<Account> getAccounts() throws SQLException;
+	
+	void createAccount(Account account)throws SQLException;
 
 }

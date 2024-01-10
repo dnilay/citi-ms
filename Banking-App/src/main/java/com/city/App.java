@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import com.city.account.Account;
@@ -30,6 +31,8 @@ public class App
       do {
     	  System.out.println("1. Display All Customers: ");
           System.out.println("2. Display All Accounts: ");
+          System.out.println("3. Create An Account: ");
+          System.out.println("0. Exit.");
           System.out.print("enter your choice: ");
           choice=scanner.nextInt();
           switch (choice) {
@@ -47,6 +50,13 @@ public class App
 			{
 				System.out.println(a);
 			}
+			break;
+		case 3:
+			System.out.println("Enter Account Holder Name: ");
+			String name=scanner.next();
+			System.out.println("Enter Amount: ");
+			int amount=scanner.nextInt();
+			accountRepository.createAccount(new Account(new Random().nextInt(10000), name, amount));
 			break;
 		case 0:
 			System.exit(0);

@@ -1,6 +1,7 @@
 package com.city.account.repo;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -13,6 +14,7 @@ import com.city.facory.MariadbConnectionFactory;
 public class AccountRepositoryImpl implements AccountRepository {
 	private Connection connection;
 	private Statement statement;
+	private PreparedStatement preparedStatement;
 	
 	private ResultSet resultSet;
 	{
@@ -35,6 +37,16 @@ public class AccountRepositoryImpl implements AccountRepository {
 		}
 		
 		return list;
+	}
+	@Override
+	public void createAccount(Account account) throws SQLException {
+		// TODO Auto-generated method stub
+		preparedStatement=connection.prepareStatement("insert into accounts(acoount_no,account_holder_name,amount_available)values(?,?,?)");
+		preparedStatement.setInt(1, account.getAccountNumber());
+		preparedStatement.setString(2, account.getAccountHolderName());
+		preparedStatement.setInt(3, account.getAmountAvailable());
+		int result= preparedStatement.executeUpdate();
+		System.out.println(result+" row(s) updated.");
 	}
 
 }
