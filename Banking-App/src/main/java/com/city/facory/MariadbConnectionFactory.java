@@ -12,6 +12,7 @@ public class MariadbConnectionFactory {
 	{
 		//step-1 registering mariadb driver
 		DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
+		//step-2 create connection
 		connection= DriverManager.getConnection("jdbc:mariadb://localhost:3306/asiahumanresource","root","root");
 		return connection;
 		
