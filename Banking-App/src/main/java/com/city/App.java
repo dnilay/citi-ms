@@ -14,6 +14,11 @@ import com.city.account.repo.AccountRepositoryImpl;
 import com.city.customer.model.Customer;
 import com.city.customer.repo.CustomerRepository;
 import com.city.customer.repo.CustomerRepositoryImpl;
+import com.city.loan.model.Loan;
+import com.city.loan.model.LoanType;
+import com.city.loan.model.ResponseLoan;
+import com.city.loan.repo.LoanRepository;
+import com.city.loan.repo.LoanRepositoryImpl;
 
 /**
  * Hello world!
@@ -23,6 +28,7 @@ public class App
 {
 	private static CustomerRepository customerRepository=new CustomerRepositoryImpl();
 	private static AccountRepository accountRepository=new AccountRepositoryImpl();
+	private static LoanRepository loanRepository=new LoanRepositoryImpl();
 	private static Scanner scanner=new Scanner(System.in);
     public static void main( String[] args ) throws SQLException
     {
@@ -33,6 +39,8 @@ public class App
           System.out.println("2. Display All Accounts: ");
           System.out.println("3. Create An Account: ");
           System.out.println("4. find by account number: ");
+          System.out.println("5. Create Loan: ");
+          System.out.println("6. Display All Available Loans: ");
           System.out.println("0. Exit.");
           System.out.print("enter your choice: ");
           choice=scanner.nextInt();
@@ -72,6 +80,20 @@ public class App
 				System.out.println(account);
 			}
 			
+			break;
+		case 5:
+			System.out.print("Enter Loan Type: ");
+			String loanString=scanner.next();
+			System.out.println("enter customer id: ");
+			String customerid=scanner.next();
+			loanRepository.createLoan(new Loan(LoanType.valueOf(loanString), customerid));
+			break;
+		case 6:
+			List<ResponseLoan> list2=loanRepository.displayAllLoans();
+			for(ResponseLoan r:list2)
+			{
+				System.out.println(r);
+			}
 			break;
 		case 0:
 			System.exit(0);

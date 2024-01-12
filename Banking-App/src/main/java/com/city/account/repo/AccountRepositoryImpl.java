@@ -58,6 +58,7 @@ public class AccountRepositoryImpl implements AccountRepository {
 		List<Account> list=new ArrayList<Account>();
 		while(resultSet.next())
 		{
+			
 			list.add(new Account(resultSet.getInt(1), resultSet.getString(2), resultSet.getInt(3)));
 		}
 		if(list.isEmpty())
