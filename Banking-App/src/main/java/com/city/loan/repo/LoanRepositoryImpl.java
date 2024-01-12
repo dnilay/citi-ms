@@ -10,7 +10,7 @@ import java.util.List;
 
 import com.city.facory.MariadbConnectionFactory;
 import com.city.loan.model.Loan;
-import com.city.loan.model.ResponseLoan;
+import com.city.loan.model.LoanType;
 
 public class LoanRepositoryImpl implements LoanRepository {
 	private Connection connection;
@@ -29,7 +29,7 @@ public class LoanRepositoryImpl implements LoanRepository {
 
 	@Override
 	public void createLoan(Loan loan) throws SQLException {
-		preparedStatement=connection.prepareStatement("insert into loans(loan_type,customer_id) values(?,?)");
+		preparedStatement = connection.prepareStatement("insert into loans(loan_type,customer_id) values(?,?)");
 		preparedStatement.setString(1, loan.getLoanType().toString());
 		preparedStatement.setString(2, loan.getCustomerId());
 		preparedStatement.executeUpdate();
@@ -38,15 +38,14 @@ public class LoanRepositoryImpl implements LoanRepository {
 	}
 
 	@Override
-	public List<ResponseLoan> displayAllLoans() throws SQLException {
-		
-		List<ResponseLoan> list=new ArrayList<ResponseLoan>();
-		statement =connection.createStatement();
-		resultSet=statement.executeQuery("select * from loans");
-		
-		while(resultSet.next())
-		{
-			list.add(new ResponseLoan(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3)));
+	public List<Loan> displayAllLoans() throws SQLException {
+
+		List<Loan> list = new ArrayList<Loan>();
+		statement = connection.createStatement();
+		resultSet = statement.executeQuery("select * from loans");
+
+		while (resultSet.next()) {
+			list.add(new Loan(resultSet.getInt(1), LoanType.valueOf(resultSet.getString(2)), resultSet.getString(3)));
 		}
 		return list;
 	}
