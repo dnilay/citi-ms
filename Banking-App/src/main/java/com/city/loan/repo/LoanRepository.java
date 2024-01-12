@@ -10,5 +10,8 @@ public interface LoanRepository {
 	void createLoan(Loan loan) throws SQLException;
 
 	List<Loan> displayAllLoans() throws SQLException;
+	
+	void updateLoanByLoanId(int loanId) throws SQLException;
+	void deleteLoanAccountById(int loanId) throws SQLException;
 
 }
