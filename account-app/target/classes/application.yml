@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: account-app
+  datasource:
+    url: jdbc:h2:mem:testDB
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
