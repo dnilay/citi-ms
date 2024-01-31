@@ -10,4 +10,20 @@ eureka:
       
   instance:
     prefer-ip-address: true
-  
+spring:
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:8888
+  application:
+    name: discovery-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+  endpoint:
+    health:
+      show-details: always      

@@ -2,7 +2,7 @@ server:
   port: 0
 spring:
   application:
-    name: card-app
+    name: loan-app
   h2:
     console:
       enabled: true
@@ -18,14 +18,12 @@ spring:
         url:
         - http://localhost:8888
 eureka:
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    prefer-ip-address: true
   client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 management:
   endpoints:
     web:
@@ -34,4 +32,4 @@ management:
         - '*'
   endpoint:
     health:
-      show-details: always
+      show-details: always        

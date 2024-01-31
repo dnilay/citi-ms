@@ -12,6 +12,11 @@ spring:
     url: jdbc:h2:mem:testDB
     username: sa
     password: sa
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:8888
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
